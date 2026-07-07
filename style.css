@@ -73,24 +73,13 @@ nav a.active {
   font-weight: 900;
   border-radius: 4px;
   display: inline-block;
-  transition: .3s;
-}
-
-.quote-btn:hover,
-.main-btn:hover {
-  transform: translateY(-2px);
 }
 
 .hero {
   min-height: 560px;
   background:
-    linear-gradient(
-      90deg,
-      rgba(0,0,0,.95) 0%,
-      rgba(0,0,0,.75) 40%,
-      rgba(0,0,0,.25) 100%
-    ),
-    url("./images/hero.png");
+    linear-gradient(90deg, rgba(0,0,0,.95) 0%, rgba(0,0,0,.75) 40%, rgba(0,0,0,.25) 100%),
+    url("./images/hero.jpg");
   background-size: cover;
   background-position: center right;
   display: flex;
@@ -119,7 +108,7 @@ nav a.active {
 
 .features {
   display: grid;
-  grid-template-columns: repeat(4,1fr);
+  grid-template-columns: repeat(4, 1fr);
   background: #181818;
   padding: 55px 40px;
 }
@@ -155,14 +144,13 @@ nav a.active {
 
 .services {
   padding: 70px 48px;
-  background: linear-gradient(#171717,#111);
+  background: linear-gradient(#171717, #111);
 }
 
 .services h2 {
   font-size: 42px;
   text-transform: uppercase;
   margin-bottom: 30px;
-  position: relative;
 }
 
 .services h2::after {
@@ -176,7 +164,7 @@ nav a.active {
 
 .service-grid {
   display: grid;
-  grid-template-columns: repeat(5,1fr);
+  grid-template-columns: repeat(5, 1fr);
   gap: 18px;
 }
 
@@ -195,7 +183,7 @@ nav a.active {
   content: "";
   position: absolute;
   inset: 0;
-  background: linear-gradient(transparent, rgba(0,0,0,.8));
+  background: linear-gradient(transparent, rgba(0,0,0,.85));
 }
 
 .service-card h3 {
@@ -231,43 +219,86 @@ nav a.active {
   margin: 36px auto 0;
 }
 
-.banner {
-  min-height: 300px;
+.truck-cta {
+  min-height: 260px;
   background:
-    linear-gradient(
-      90deg,
-      rgba(0,0,0,.9),
-      rgba(0,0,0,.35)
-    ),
-    url("./images/banner.jpg");
+    linear-gradient(90deg, rgba(0,0,0,.95) 0%, rgba(0,0,0,.25) 45%, rgba(0,0,0,.9) 100%),
+    url("./images/truck-cta.jpg");
   background-size: cover;
   background-position: center;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 60px 75px;
+  padding: 45px 95px;
+  border-top: 8px solid #000;
+  border-bottom: 8px solid #000;
 }
 
-.banner h2 {
-  font-size: 52px;
-  line-height: 1;
-  text-transform: uppercase;
-}
-
-.banner h2 span {
-  color: #d6ad32;
-}
-
-.banner-text {
-  font-size: 48px;
+.truck-left h2,
+.truck-right h3 {
   text-transform: uppercase;
   font-weight: 900;
-  text-align: right;
-  letter-spacing: 2px;
+  line-height: .95;
+}
+
+.truck-left h2 {
+  font-size: 42px;
+  margin-bottom: 16px;
+}
+
+.truck-left p,
+.truck-right p {
+  color: #ddd;
+  font-size: 15px;
+  line-height: 1.45;
+}
+
+.truck-right {
+  display: flex;
+  gap: 28px;
+  align-items: flex-start;
+  position: relative;
+}
+
+.truck-right::before {
+  content: "";
+  position: absolute;
+  left: -70px;
+  top: -55px;
+  width: 8px;
+  height: 320px;
+  background: #d6ad32;
+  transform: skewX(-16deg);
+}
+
+.calendar-icon {
+  color: #d6ad32;
+  border: 3px solid #d6ad32;
+  width: 72px;
+  height: 72px;
+  display: grid;
+  place-items: center;
+  font-size: 32px;
+}
+
+.truck-right h3 {
+  font-size: 34px;
+  margin-bottom: 14px;
+}
+
+.outline-btn {
+  display: inline-block;
+  margin-top: 16px;
+  color: #fff;
+  border: 2px solid #aaa;
+  padding: 12px 26px;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 900;
+  font-size: 13px;
 }
 
 @media (max-width: 900px) {
-
   .navbar {
     height: auto;
     flex-direction: column;
@@ -304,15 +335,22 @@ nav a.active {
     grid-template-columns: 1fr;
   }
 
-  .banner {
+  .truck-cta {
     flex-direction: column;
     align-items: flex-start;
-    gap: 35px;
-    padding: 50px 30px;
+    gap: 40px;
+    padding: 45px 30px;
   }
 
-  .banner-text {
-    text-align: left;
-    font-size: 36px;
+  .truck-right::before {
+    display: none;
+  }
+
+  .truck-left h2 {
+    font-size: 34px;
+  }
+
+  .truck-right h3 {
+    font-size: 30px;
   }
 }
