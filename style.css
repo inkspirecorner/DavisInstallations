@@ -223,7 +223,7 @@ nav a.active {
   min-height: 260px;
   background:
     linear-gradient(90deg, rgba(0,0,0,.95) 0%, rgba(0,0,0,.25) 45%, rgba(0,0,0,.9) 100%),
-    url("./images/truck-cta.png");
+    url("./images/truck-cta.jpg");
   background-size: cover;
   background-position: center;
   display: flex;
@@ -296,61 +296,4 @@ nav a.active {
   text-transform: uppercase;
   font-weight: 900;
   font-size: 13px;
-}
-
-@media (max-width: 900px) {
-  .navbar {
-    height: auto;
-    flex-direction: column;
-    gap: 20px;
-    padding: 25px;
-  }
-
-  nav {
-    gap: 20px;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-
-  .hero {
-    padding: 80px 30px;
-  }
-
-  .hero-content h2 {
-    font-size: 48px;
-  }
-
-  .features {
-    grid-template-columns: 1fr;
-    gap: 40px;
-  }
-
-  .feature {
-    border-right: none;
-    border-bottom: 1px solid #333;
-    padding-bottom: 35px;
-  }
-
-  .service-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .truck-cta {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 40px;
-    padding: 45px 30px;
-  }
-
-  .truck-right::before {
-    display: none;
-  }
-
-  .truck-left h2 {
-    font-size: 34px;
-  }
-
-  .truck-right h3 {
-    font-size: 30px;
-  }
 }
