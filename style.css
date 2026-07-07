@@ -79,7 +79,7 @@ nav a.active {
   min-height: 560px;
   background:
     linear-gradient(90deg, rgba(0,0,0,.95) 0%, rgba(0,0,0,.75) 40%, rgba(0,0,0,.25) 100%),
-    url("./images/hero.jpg");
+    url("./images/hero.png");
   background-size: cover;
   background-position: center right;
   display: flex;
@@ -194,23 +194,23 @@ nav a.active {
 }
 
 .card-1 {
-  background-image: url("./images/service-1.jpg");
+  background-image: url("./images/service-1.png");
 }
 
 .card-2 {
-  background-image: url("./images/service-2.jpg");
+  background-image: url("./images/service-2.png");
 }
 
 .card-3 {
-  background-image: url("./images/service-3.jpg");
+  background-image: url("./images/service-3.png");
 }
 
 .card-4 {
-  background-image: url("./images/service-4.jpg");
+  background-image: url("./images/service-4.png");
 }
 
 .card-5 {
-  background-image: url("./images/service-5.jpg");
+  background-image: url("./images/service-5.png");
 }
 
 .service-btn {
@@ -223,7 +223,7 @@ nav a.active {
   min-height: 260px;
   background:
     linear-gradient(90deg, rgba(0,0,0,.95) 0%, rgba(0,0,0,.25) 45%, rgba(0,0,0,.9) 100%),
-    url("./images/truck-cta.jpg");
+    url("./images/truck-cta.png");
   background-size: cover;
   background-position: center;
   display: flex;
