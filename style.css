@@ -73,13 +73,24 @@ nav a.active {
   font-weight: 900;
   border-radius: 4px;
   display: inline-block;
+  transition: .3s;
+}
+
+.quote-btn:hover,
+.main-btn:hover {
+  transform: translateY(-2px);
 }
 
 .hero {
   min-height: 560px;
   background:
-    linear-gradient(90deg, rgba(0,0,0,.95) 0%, rgba(0,0,0,.75) 40%, rgba(0,0,0,.25) 100%),
-    url("hero.jpg");
+    linear-gradient(
+      90deg,
+      rgba(0,0,0,.95) 0%,
+      rgba(0,0,0,.75) 40%,
+      rgba(0,0,0,.25) 100%
+    ),
+    url("./images/hero.jpg");
   background-size: cover;
   background-position: center right;
   display: flex;
@@ -108,7 +119,7 @@ nav a.active {
 
 .features {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(4,1fr);
   background: #181818;
   padding: 55px 40px;
 }
@@ -144,7 +155,7 @@ nav a.active {
 
 .services {
   padding: 70px 48px;
-  background: linear-gradient(#171717, #111);
+  background: linear-gradient(#171717,#111);
 }
 
 .services h2 {
@@ -165,7 +176,7 @@ nav a.active {
 
 .service-grid {
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
+  grid-template-columns: repeat(5,1fr);
   gap: 18px;
 }
 
@@ -194,11 +205,25 @@ nav a.active {
   font-size: 15px;
 }
 
-.card-1 { background-image: url("service-1.jpg"); }
-.card-2 { background-image: url("service-2.jpg"); }
-.card-3 { background-image: url("service-3.jpg"); }
-.card-4 { background-image: url("service-4.jpg"); }
-.card-5 { background-image: url("service-5.jpg"); }
+.card-1 {
+  background-image: url("./images/service-1.jpg");
+}
+
+.card-2 {
+  background-image: url("./images/service-2.jpg");
+}
+
+.card-3 {
+  background-image: url("./images/service-3.jpg");
+}
+
+.card-4 {
+  background-image: url("./images/service-4.jpg");
+}
+
+.card-5 {
+  background-image: url("./images/service-5.jpg");
+}
 
 .service-btn {
   display: block;
@@ -209,8 +234,12 @@ nav a.active {
 .banner {
   min-height: 300px;
   background:
-    linear-gradient(90deg, rgba(0,0,0,.9), rgba(0,0,0,.35)),
-    url("banner.jpg");
+    linear-gradient(
+      90deg,
+      rgba(0,0,0,.9),
+      rgba(0,0,0,.35)
+    ),
+    url("./images/banner.jpg");
   background-size: cover;
   background-position: center;
   display: flex;
@@ -238,6 +267,7 @@ nav a.active {
 }
 
 @media (max-width: 900px) {
+
   .navbar {
     height: auto;
     flex-direction: column;
