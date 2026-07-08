@@ -260,97 +260,41 @@ nav a.active {
    TRUCK CTA
 ========================= */
 
-.truck-cta {
-  min-height: 340px;
-  display: grid;
-  grid-template-columns: 64% 18px 36%;
-  background: #050505;
-  overflow: hidden;
-  border-top: 8px solid #000;
-  border-bottom: 8px solid #000;
+.truck-cta{
+    display:flex;
+    height:340px;
+    background:#050505;
+    overflow:hidden;
 }
 
-.truck-left {
-  background:
-    linear-gradient(90deg, rgba(0,0,0,.8), rgba(0,0,0,.15)),
-    url("./images/truck-cta.png");
-  background-size: cover;
-  background-position: center;
-  padding: 70px 85px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
+.truck-left{
+    width:72%;
+    background:
+        linear-gradient(rgba(0,0,0,.65),rgba(0,0,0,.25)),
+        url("./images/truck-cta.png");
+    background-size:cover;
+    background-position:center;
 
-.truck-left h2 {
-  font-size: 52px;
-  line-height: .95;
-  text-transform: uppercase;
-  font-weight: 900;
-  margin-bottom: 18px;
-}
+    clip-path:polygon(
+        0 0,
+        92% 0,
+        84% 100%,
+        0 100%
+    );
 
-.truck-left p {
-  color: #eee;
-  font-size: 17px;
-  line-height: 1.45;
+    padding:70px;
+    position:relative;
 }
-
-.truck-divider {
-  background: #d6ad32;
-  transform: skewX(-12deg);
-  width: 28px;
-  margin-left: -10px;
-  margin-right: -10px;
-  z-index: 2;
+.truck-left::after{
+    content:"";
+    position:absolute;
+    top:-10%;
+    right:6%;
+    width:16px;
+    height:120%;
+    background:#d6ad32;
+    transform:rotate(8deg);
 }
-
-.truck-right {
-  background: #050505;
-  padding: 70px 55px;
-  display: flex;
-  gap: 24px;
-  align-items: flex-start;
-  justify-content: center;
-}
-
-.calendar-icon {
-  width: 70px;
-  height: 70px;
-  border: 3px solid #d6ad32;
-  color: #d6ad32;
-  display: grid;
-  place-items: center;
-  font-size: 28px;
-  flex-shrink: 0;
-}
-
-.truck-right h3 {
-  font-size: 34px;
-  line-height: 1;
-  text-transform: uppercase;
-  font-weight: 900;
-  margin-bottom: 16px;
-}
-
-.truck-right p {
-  color: #ccc;
-  font-size: 15px;
-  line-height: 1.45;
-}
-
-.outline-btn {
-  display: inline-block;
-  margin-top: 20px;
-  color: #fff;
-  border: 2px solid #888;
-  padding: 13px 28px;
-  text-decoration: none;
-  text-transform: uppercase;
-  font-weight: 900;
-  font-size: 13px;
-}
-
 @media (max-width: 768px) {
   .truck-cta {
     grid-template-columns: 1fr;
@@ -359,10 +303,6 @@ nav a.active {
   .truck-left {
     min-height: 300px;
     padding: 55px 28px;
-  }
-
-  .truck-divider {
-    display: none;
   }
 
   .truck-right {
