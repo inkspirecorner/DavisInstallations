@@ -79,7 +79,7 @@ nav a.active {
   min-height: 560px;
   background:
     linear-gradient(90deg, rgba(0,0,0,.95) 0%, rgba(0,0,0,.75) 40%, rgba(0,0,0,.25) 100%),
-    url("./images/hero.png");
+    url("./images/Hero.png");
   background-size: cover;
   background-position: center right;
   display: flex;
@@ -223,7 +223,7 @@ nav a.active {
   min-height: 260px;
   background:
     linear-gradient(90deg, rgba(0,0,0,.95) 0%, rgba(0,0,0,.25) 45%, rgba(0,0,0,.9) 100%),
-    url("./images/truck-cta.jpg");
+    url("./images/truck-cta.png");
   background-size: cover;
   background-position: center;
   display: flex;
