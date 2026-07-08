@@ -473,7 +473,26 @@ nav a.active {
     font-size: 30px;
   }
 }
+.outline-btn,
+.outline-btn:visited {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 14px 30px;
+  border: 2px solid #888;
+  color: #fff;
+  background: transparent;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 900;
+  font-size: 13px;
+  line-height: 1;
+}
 
+.outline-btn:hover {
+  background: #d6ad32;
+  color: #111;
+  border-color: #d6ad32;
+}
 /* =========================
    SMALL PHONES
 ========================= */
