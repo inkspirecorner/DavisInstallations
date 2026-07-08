@@ -297,3 +297,176 @@ nav a.active {
   font-weight: 900;
   font-size: 13px;
 }
+
+@media (max-width: 1100px) {
+  .navbar {
+    padding: 0 28px;
+  }
+
+  nav {
+    gap: 24px;
+  }
+
+  .hero-content h2 {
+    font-size: 58px;
+  }
+
+  .service-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .truck-cta {
+    padding: 45px 45px;
+  }
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    height: auto;
+    flex-direction: column;
+    gap: 20px;
+    padding: 25px 20px;
+  }
+
+  nav {
+    width: 100%;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 18px;
+  }
+
+  nav a {
+    font-size: 12px;
+  }
+
+  .quote-btn {
+    display: none;
+  }
+
+  .hero {
+    min-height: 520px;
+    padding: 80px 24px;
+    background-position: center;
+  }
+
+  .hero-content h2 {
+    font-size: 46px;
+  }
+
+  .hero-content p {
+    font-size: 18px;
+  }
+
+  .features {
+    grid-template-columns: repeat(2, 1fr);
+    padding: 45px 24px;
+  }
+
+  .feature {
+    border-right: none;
+    border-bottom: 1px solid #333;
+    padding: 25px 18px;
+  }
+
+  .services {
+    padding: 55px 24px;
+  }
+
+  .services h2 {
+    font-size: 36px;
+  }
+
+  .service-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .service-card {
+    height: 190px;
+  }
+
+  .truck-cta {
+    min-height: auto;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 35px;
+    padding: 45px 26px;
+    background-position: center;
+  }
+
+  .truck-right {
+    width: 100%;
+  }
+
+  .truck-right::before {
+    display: none;
+  }
+}
+/* ===================================
+   phone format SECTION
+=================================== */
+@media (max-width: 480px) {
+  .logo h1 {
+    font-size: 20px;
+  }
+
+  .mark {
+    font-size: 32px;
+  }
+
+  nav {
+    gap: 14px;
+  }
+
+  nav a {
+    font-size: 11px;
+  }
+
+  .hero {
+    min-height: 480px;
+    padding: 65px 20px;
+  }
+
+  .hero-content h2 {
+    font-size: 38px;
+  }
+
+  .hero-content p {
+    font-size: 16px;
+  }
+
+  .main-btn {
+    padding: 14px 22px;
+    font-size: 12px;
+  }
+
+  .features {
+    grid-template-columns: 1fr;
+  }
+
+  .service-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .service-card {
+    height: 210px;
+  }
+
+  .truck-left h2 {
+    font-size: 32px;
+  }
+
+  .truck-right {
+    flex-direction: column;
+    gap: 18px;
+  }
+
+  .truck-right h3 {
+    font-size: 28px;
+  }
+
+  .calendar-icon {
+    width: 58px;
+    height: 58px;
+    font-size: 24px;
+  }
+}
